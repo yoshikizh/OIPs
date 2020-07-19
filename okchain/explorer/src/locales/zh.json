@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "prodName": "区块链浏览器"
+  },
+  "names": {
+    "homepage": "首页",
+    "address": "地址",
+    "transaction": "交易",
+    "height": "区块高度",
+    "search": "搜索",
+    "validator": "超级节点",
+    "token": "代币",
+    "tradePair": "交易对",
+    "block": "区块",
+    "deal": "成交",
+    "depth": "深度",
+    "normalAccount": "普通账号",
+    "balance": "余额"
+  },
+  "banner": {
+    "ValidatorCount": "节点数",
+    "TokenCount": "代币数量",
+    "TradePairCount": "交易对数量"
+  },
+  "account": {
+    "type": "账号类型",
+    "TokenNums": "代币数量"
+  },
+  "block": {
+    "hash": "块哈希",
+    "height": "高度",
+    "time": "出块时间",
+    "txNums": "交易数",
+    "validator": "打包节点",
+    "fee": "手续费"
+  },
+  "common": {
+    "name": "名称",
+    "detail": "详情",
+    "description": "描述",
+    "error": "错误",
+    "buy": "买入",
+    "sell": "卖出",
+    "price": "价格",
+    "quantity": "数量",
+    "transfer": "转账",
+    "amount": "金额",
+    "show": "显示",
+    "yes": "是",
+    "no": "否",
+    "success": "成功"
+  },
+  "transfer": {
+    "from": "转出账号",
+    "to": "转入账号"
+  },
+  "validator": {
+    "votes": "票数",
+    "rank": "排名",
+    "name": "节点名称",
+    "website": "节点官网",
+    "account": "节点账号",
+    "description": "节点描述",
+    "data": "节点数据",
+    "voteDetail": "投票详情"
+  },
+  "token": {
+    "symbol": "代币",
+    "totalSupply": "总发行量",
+    "fullName": "全名",
+    "originName": "原名",
+    "originSupply": "原始发行量",
+    "ownerAccount": "发行账号",
+    "position": "持仓",
+    "locked": "锁定"
+  },
+  "tradePair": {
+    "baseAsset": "报价资产",
+    "quoteAsset": "交易资产",
+    "minTradeSize": "最小交易数",
+    "pricePrecision": "价格精度",
+    "quantityPrecision": "数量精度",
+    "onMarket": "是否上市",
+    "on": "已上市",
+    "delisting": "已下市"
+  },
+  "transaction": {
+    "hash": "交易哈希",
+    "height": "所属高度",
+    "time": "交易时间",
+    "sender": "发送方",
+    "txType": "交易类型",
+    "fee": "手续费",
+    "status": "状态",
+    "amount": "金额",
+    "confirmTxNums": "确认数",
+    "data": "交易数据"
+  },
+  "market": {
+    "totalAmount": "成交总金额",
+    "price": "成交价格",
+    "volume": "成交量",
+    "time": "成交时间",
+    "height": "所属高度"
+  },
+  "txType": {
+    "create": "创建订单",
+    "cancel": "取消订单"
+  },
+  "error": {
+    "invalidQuery": "无效的查询"
+  },
+  "msg": {
+    "noTxs": "没有任何交易"
+  },
+  "footer": {
+    "about": "关于我们",
+    "team": "团队介绍",
+    "updateHistory": "更新历史",
+    "development": "开发者",
+    "coreCode": "核心代码",
+    "document": "技术文档",
+    "website": "官网",
+    "links": "相关连接"
+  },
+  "about": {
+    "content1": "BTSPP致力于推进区块链技术演化及发展。在区块链领域我们拥有丰富的开发和运营经验。尤其在去中心化产品, 如比特股(BITSHARES)产品,我们担任其网络运行的见证人节点, 也是比特股官方移动端开发团队, 在其社区治理和生态发展也作出过重要贡献",
+    "content2": "OKex区块链是我们极力支持的项目, 我们极力希望用我们在区块链去中心化领域的为okchain生态作出贡献",
+    "contact": "联系我们",
+    "email": "邮箱",
+    "telegram": "电报"
+  },
+  "updates": {
+    "update20200720": {
+      "item1": "区块, 交易, 节点的查询",
+      "item2": "节点列表",
+      "item3": "代币列表",
+      "item4": "交易对列表"
+    },
+    "update20200625": {
+      "item1": "首次更新"
+    }
+  },
+  "lastBlock": "最新区块",
+  "LatestTransactions": "最新交易",
+  "toggleLang": "切换语言",
+  "totalNumBlock": "共计 {nums} 个区块"
+}

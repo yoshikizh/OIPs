@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "prodName": "Block Chain Explorer"
+  },
+  "names": {
+    "homepage": "Home",
+    "address": "Address",
+    "transaction": "Transaction",
+    "height": "Height",
+    "search": "Search",
+    "validator": "Validator",
+    "token": "Token",
+    "tradePair": "Tradepair",
+    "block": "Block",
+    "deal": "Deal",
+    "depth": "Depth",
+    "normalAccount": "Normal Account",
+    "balance": "Balance"
+  },
+  "banner": {
+    "ValidatorCount": "Validators",
+    "TokenCount": "Tokens",
+    "TradePairCount": "Trade Pairs"
+  },
+  "account": {
+    "type": "Account Type",
+    "TokenNums": "Token Nums"
+  },
+  "block": {
+    "hash": "Hash",
+    "height": "Height",
+    "time": "Time",
+    "txNums": "Tx Nums",
+    "validator": "Validator",
+    "fee": "Fee"
+  },
+  "common": {
+    "name": "Name",
+    "detail": "Detail",
+    "description": "Description",
+    "error": "Error",
+    "buy": "buy",
+    "sell": "sell",
+    "price": "price",
+    "quantity": "quantity",
+    "transfer": "transfer",
+    "amount": "amount",
+    "show": "show",
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success"
+  },
+  "transfer": {
+    "from": "From",
+    "to": "To"
+  },
+  "validator": {
+    "votes": "Votes",
+    "rank": "Rank",
+    "name": "Validator Name",
+    "website": "Validator Website",
+    "account": "Account",
+    "description": "Description",
+    "data": "Raw Data",
+    "voteDetail": "Vote Detail"
+  },
+  "token": {
+    "symbol": "Symbol",
+    "totalSupply": "Total Suppy",
+    "fullName": "Full Name",
+    "originName": "Origin Name",
+    "originSupply": "Origin Supply",
+    "ownerAccount": "Owner Address",
+    "position": "Position",
+    "locked": "Locked"
+  },
+  "tradePair": {
+    "baseAsset": "Base Asset Symbol",
+    "quoteAsset": "Quote Asset Symbol",
+    "minTradeSize": "Min Trade Size",
+    "pricePrecision": "Price Precision",
+    "quantityPrecision": "Quantity Precision",
+    "onMarket": "On Market",
+    "on": "On",
+    "delisting": "Delisting"
+  },
+  "transaction": {
+    "hash": "Hash",
+    "height": "Height",
+    "time": "time",
+    "sender": "Sender",
+    "txType": "Type",
+    "fee": "Fee",
+    "status": "Status",
+    "amount": "Amount",
+    "confirmNums": "Confirm Nums",
+    "data": "raw Data"
+  },
+  "market": {
+    "totalAmount": "Total Amount",
+    "price": "price",
+    "volume": "volume",
+    "time": "Time",
+    "height": "Height"
+  },
+  "txType": {
+    "create": "Create Order",
+    "cancel": "Cancel Order"
+  },
+  "error": {
+    "invalidQuery": "Query is invalid."
+  },
+  "msg": {
+    "noTxs": "Dont have any transactions"
+  },
+  "footer": {
+    "about": "About",
+    "team": "Team",
+    "updateHistory": "Updates",
+    "development": "Development",
+    "coreCode": "Core Code",
+    "document": "Document",
+    "website": "Website",
+    "links": "Links"
+  },
+  "about": {
+    "content1": "BTSPP is committed to promoting the evolution and development of blockchain technology. We have rich experience in development and operation in the field of blockchain. Especially in decentralized products, such as BitShares (BITSHARES) products, we serve as the witness node of its network operation, and also the official mobile terminal development team of BitShares, and have also made important contributions to its community governance and ecological development.",
+    "content2": "The OKex blockchain is a project we strongly support, and we strongly hope to use our decentralized blockchain to contribute to the okchain ecosystem",
+    "contact": "Contact Us",
+    "email": "Email",
+    "telegram": "Telegram"
+  },
+  "updates": {
+    "update20200720": {
+      "item1": "Block, Tx, Address, Queries",
+      "item2": "Validator List",
+      "item3": "Token List",
+      "item4": "Trade Pari List"
+    },
+    "update20200625": {
+      "item1": "The first update"
+    }
+  },
+  "lastBlock": "Last Block",
+  "LatestTransactions": "Latest Transactions",
+  "toggleLang": "Language",
+  "totalNumBlock": "Total {nums} Blocks"
+}
