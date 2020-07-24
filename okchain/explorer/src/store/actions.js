@@ -7,37 +7,46 @@ const Actions = {
       const block = resp.data.block
       const header = block.header
 
-      getters._getTotalFeeForBlock(header.height).then((totalFee) => {
-        const data = {
-          height: header.height,
-          block_hash: blockmeta.block_id.hash,
-          time: header.time,
-          num_txs: header.num_txs,
-          proposer_address: header.proposer_address,
-          totalFee: totalFee
-        }
-        if (state.blocks[0].height !== header.height) {
-          commit('updateLastBlock', { data: data })
+      // Remarek 暂时去掉查询总手续费
+      // getters._getTotalFeeForBlock(header.height).then((totalFee) => {
+      const data = {
+        height: header.height,
+        block_hash: blockmeta.block_id.hash,
+        time: header.time,
+        num_txs: header.num_txs,
+        proposer_address: header.proposer_address,
+        totalFee: 0
+        // totalFee: totalFee
+      }
+      let totalFee = 0
+      if (state.blocks[0].height !== header.height) {
+        commit('updateLastBlock', { data: data })
 
-          // 查询最新交易
-          Request.get('/block_tx_hashes/' + data.height).then((_resp) => {
-            const txHashs = _resp.data
-            const promises = []
-            txHashs.forEach((txhash) => {
-              const p = new Promise((resolve, reject) => {
-                Request.get('/txs/' + txhash).then((__resp) => {
-                  resolve(__resp.data)
-                })
+        // 查询最新交易
+        Request.get('/block_tx_hashes/' + data.height).then((_resp) => {
+          const txHashs = _resp.data
+          const promises = []
+          txHashs.forEach((txhash) => {
+            const p = new Promise((resolve, reject) => {
+              Request.get('/txs/' + txhash).then((__resp) => {
+                const amountArr = __resp.data.tx.value.fee.amount
+                const amountObj = amountArr.filter((obj) => { return obj.denom === 'tokt' })[0]
+                if (amountObj) {
+                  totalFee += parseFloat(amountObj.amount)
+                }
+                resolve(__resp.data)
               })
-              promises.push(p)
             })
-            Promise.all(promises).then((result) => {
-              commit('updateTransactions', { data: result })
-              commit('updateInitializeTransactionsFinished')
-            })
+            promises.push(p)
           })
-        }
-      })
+          Promise.all(promises).then((result) => {
+            data.totalFee = totalFee
+            commit('updateTransactions', { data: result })
+            commit('updateInitializeTransactionsFinished')
+          })
+        })
+      }
+      // })
     })
   },
   apiGetBlocksFirstLaunch ({ getters, dispatch, commit, state }, params) {
